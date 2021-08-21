@@ -1,0 +1,237 @@
+.navbar {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 1px 7px grey;
+    box-shadow: 0px 1px 7px grey;
+}
+
+.navbar .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar .company a {
+    margin: auto;
+    padding-left: 8px;
+}
+.navbar .company a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    -o-transition: 0.35s ease;
+    transition: 0.35s ease;
+    -webkit-transition: 0.35s ease;
+    -moz-transition: 0.35s ease;
+}
+.navbar .company a img:hover {
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.navbar .company-name {
+    color: white;
+    font-family: catamaran;
+    letter-spacing: 1px;
+    padding: 0.6rem 0.5rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+.navbar .company-name:hover {
+    color: rgb(175, 175, 175);
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+}
+
+.navbar-links {
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+.navbar-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-family: catamaran;
+    letter-spacing: 1px;
+    color: white;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.navbar-links li a:hover {
+    color: orange;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(44, 44, 44);
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+}
+
+.navbar .test {
+    width: 30px;
+    height: 20px;
+    background-color: green;
+}
+
+.toggle-button {
+    display: none;
+    width: 30px;
+    height: 21px;
+    position: absolute;
+    top: 0.93rem;
+    right: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.toggle-button:hover > span {
+    background-color: orange;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.toggle-button span {
+    background-color: white;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+.toggle-button span:nth-child(1) {
+    top: 0px;
+}
+
+.toggle-button span:nth-child(2),
+.toggle-button span:nth-child(3) {
+    top: 9px;
+}
+
+.toggle-button span:nth-child(4) {
+    top: 18px;
+}
+
+.toggle-button.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.toggle-button.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.toggle-button.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.toggle-button.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+@media (max-width: 650px) {
+    .toggle-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding: 8px 0;
+    }
+    .navbar-links ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 12px;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 1rem;
+    }
+    .navbar-links.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}

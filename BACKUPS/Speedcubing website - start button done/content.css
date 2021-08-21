@@ -1,0 +1,87 @@
+.content div {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 24px 2rem;
+    margin: 0 auto;
+}
+.content .img {
+    width: 230px;
+    height: 230px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
+    transition: transform 0.8s ease;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+    -webkit-transition: transform 0.8s ease;
+    -moz-transition: transform 0.8s ease;
+}
+.content .div-img1,
+.content .div-img2 {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+    margin: auto 8px;
+    width: 230px;
+    height: 230px;
+    border-radius: 25px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.content .div-img1:hover img {
+    -webkit-transform: scale(1.2) rotate(-10deg);
+    -ms-transform: scale(1.2) rotate(-10deg);
+    transform: scale(1.2) rotate(-10deg);
+}
+.content .div-img2:hover img {
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+}
+.content p {
+    padding: 8px;
+    width: 40vw;
+    text-align: justify;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.content .div-odd-num {
+    background-color: rgb(226, 234, 243);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+    .content div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 16px 1rem;
+    }
+    .content .div-img1,
+    .content .div-img2 {
+        margin: 8px auto 16px auto;
+    }
+    .content p {
+        width: 80vw;
+    }
+    #a {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    #b {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}

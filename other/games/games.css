@@ -1,0 +1,92 @@
+.layout {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.games {
+    width: 40vw;
+    background-color: rgb(34, 163, 22);
+    height: 35vw;
+    max-width: 500px;
+    max-height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0 1rem 3rem;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* padding: 8px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+}
+
+/* @font-face {
+    font-family: myFirstFont;
+    src: url(/assets/HammersmithOne-Regular.ttf);
+  } */
+
+.games p {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(26, 26, 26);
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+.games:hover,
+.games:focus {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.games.rps {
+    background: url(/assets/rps.png) center;
+    background-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.games.snake {
+    background: url(/assets/snake.png) center;
+    background-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+@media (max-width: 650px) {
+    .layout {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .games {
+        width: 75vw;
+        height: 50vw;
+    }
+}
