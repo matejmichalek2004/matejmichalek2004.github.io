@@ -72,7 +72,7 @@
         </div>
 
         <div class="bottom">
-            <p>Copyright &copy; 2021 Matěj Michálek</p>
+            <p>Created in 2021 by Matěj Michálek</p>
         </div>
         <script src="/lib/jquery.plugin.js"></script>
         <script>
@@ -91,10 +91,10 @@
 
             // ----MAIN GAME ENGINE----
             function play(selection) {
-                let beforeNumLeft = document.getElementById('left-counter')
-                    .innerText;
-                let beforeNumRight = document.getElementById('right-counter')
-                    .innerText;
+                let beforeNumLeft =
+                    document.getElementById('left-counter').innerText;
+                let beforeNumRight =
+                    document.getElementById('right-counter').innerText;
                 let randomNum = getRandomInt(0, 2);
 
                 // console.log("selection: ", selection);
