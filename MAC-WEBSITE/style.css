@@ -65,7 +65,7 @@ h1{
 .landing{
     width: 100vw;
     height: 100vh;
-    background: url(Assets/bg.jpg);
+    background: url("/Assets/bg.jpg");
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
