@@ -39,6 +39,10 @@ h1{
     margin-bottom: 2rem;
 }
 
+img{
+    transition: all 1.5s ease-in-out;
+}
+
 .flex {
     display: flex;
 }
@@ -65,12 +69,14 @@ h1{
 .landing{
     width: 100vw;
     height: 100vh;
-    background: url(Assets/bg.jpg);
+    background: url(../Assets/bg.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     position: relative;
+    user-select: none;
+
 }
 
 .landing nav ul{
@@ -109,7 +115,7 @@ h1{
     /* font-size: 9rem; */
     font-weight: bold;
     color:white;
-    margin:0
+    margin:0;
 }
 .landing h2{
     position:absolute;
@@ -159,7 +165,7 @@ h1{
     transform:translateX(-10%);
     margin-top:6rem;
     margin-bottom:4rem;
-
+    /* position:relative; */
 }
 
 @media (max-width:1000px) {
@@ -492,6 +498,7 @@ hr {
     width:max(30rem,55%);
     /* background:yellow; */
     /* transform: translateY(-120%); */
+    
 }
 
 .requirements img{
@@ -551,4 +558,19 @@ footer{
     :root{
         font-size: 14px;
     }
+}
+
+.slide-left{
+    margin-left: min(15vw, 20rem);
+}
+
+.slide-left-small{
+    margin-left: min(4vw, 5rem);
+    /* margin-left: 5rem; */
+}
+
+
+
+.scale-transition:hover{
+    transform:scale(1.05);
 }
